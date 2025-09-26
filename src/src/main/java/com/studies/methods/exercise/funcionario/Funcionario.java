@@ -1,19 +1,23 @@
-package com.studies.methods.exercise;
+package com.studies.methods.exercise.funcionario;
 
 public class Funcionario {
     public String nome;
     public int idade;
-    public double[] salario;
+    public double[] salarios;
 
-    public void dadosFuncionario() {
-        this.nome = "Seiji";
-        this.idade = 25;
+    public void imprimir() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Idade: " + this.idade);
+        for(double salario : salarios){
+            System.out.println("Salário: " + salario);
+        }
     }
 
-    public void calcularSalario(int... salario) {
+    public void calcularMediaSalario() {
         double media = 0;
-        for(double sal : salario){
-            media += sal;
+        for(double salario : salarios) {
+            media += salario;
         }
+        System.out.println("Média dos salários: " + media / salarios.length);
     }
 }
