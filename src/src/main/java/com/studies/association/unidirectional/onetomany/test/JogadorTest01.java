@@ -1,6 +1,6 @@
-package com.studies.association.onetomany.test;
+package com.studies.association.unidirectional.onetomany.test;
 
-import com.studies.association.onetomany.Jogador;
+import com.studies.association.unidirectional.onetomany.domain.Jogador;
 
 // Associação unidirecional um para muitos
 public class JogadorTest01 {

@@ -1,4 +1,4 @@
-package com.studies.association.bidirectional.domain;
+package com.studies.association.exercise.domain;
 
 public class Aluno {
     private String nome;
@@ -16,10 +16,8 @@ public class Aluno {
     }
 
     public void imprime() {
-        System.out.println("--------- Aluno --------");
         System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Seminario: " + seminario);
+        System.out.println("Idade: " + idade + " anos");
     }
 
     public String getNome() {

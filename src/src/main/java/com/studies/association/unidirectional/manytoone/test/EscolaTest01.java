@@ -1,7 +1,7 @@
-package com.studies.association.manytoone.test;
+package com.studies.association.unidirectional.manytoone.test;
 
-import com.studies.association.manytoone.domain.Escola;
-import com.studies.association.manytoone.domain.Professor;
+import com.studies.association.unidirectional.manytoone.domain.Escola;
+import com.studies.association.unidirectional.manytoone.domain.Professor;
 
 // Associação unidirecional muitos para um
 public class EscolaTest01 {

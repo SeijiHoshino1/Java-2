@@ -1,4 +1,4 @@
-package com.studies.association.manytoone.domain;
+package com.studies.association.unidirectional.manytoone.domain;
 
 // Associação unidirecional muitos para um
 public class Escola {

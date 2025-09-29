@@ -1,4 +1,4 @@
-package com.studies.association.bidirectional.domain;
+package com.studies.association.exercise.domain;
 
 public class Professor {
     private String nome;
@@ -14,15 +14,17 @@ public class Professor {
     public void imprime() {
         System.out.println("------ Professor -----");
         System.out.println("Nome: " + this.nome);
+        System.out.println("Especialidade: " + this.especialidade + "\n");
 
         if (seminarios != null) {
             System.out.println("-- Seminários cadastrados --");
             for (Seminario seminario : seminarios) {
-                System.out.println(seminario.getTitulo());
-                System.out.println(seminario.getLocal().getEndereco());
+                System.out.println("Titulo: " + seminario.getTitulo());
+                System.out.println("Local: " + seminario.getLocal().getEndereco() + "\n");
+                if (seminario.getAlunos() == null || seminario.getAlunos().length == 0) {continue;}
                 System.out.println("-- Alunos cadastrados --");
                 for (Aluno aluno : seminario.getAlunos()) {
-                    System.out.println("Aluno:" + aluno.getNome() + "Idade:" + aluno.getIdade());
+                    aluno.imprime();
                 }
             }
         }

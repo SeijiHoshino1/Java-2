@@ -1,4 +1,4 @@
-package com.studies.association.unidirectional.onetomany;
+package com.studies.association.unidirectional.onetomany.domain;
 
 // Associação unidirecional um para muitos
 public class Time {

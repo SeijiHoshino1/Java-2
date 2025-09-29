@@ -1,4 +1,4 @@
-package com.studies.association.bidirectional.domain;
+package com.studies.association.exercise.domain;
 
 public class Local {
     private String endereco;
